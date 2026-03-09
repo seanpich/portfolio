@@ -1,0 +1,93 @@
+
+
+/* Section Title */
+.section-title {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 25px;
+  color: #373737;
+}
+
+.section-title span {
+  background: linear-gradient(45deg, #f06, #3cf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+/* Card */
+.project-card {
+  background: #11161f;
+  border-radius: 12px;
+  padding: 22px;
+  width: calc(25% - 18px);
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 3px solid rgba(255,255,255,0.08);
+  transition: 0.2s;
+}
+
+/* Hover */
+.project-card:hover {
+  border-bottom: 3px solid #ff9900;
+  transform: translateY(-4px);
+}
+
+/* Card Text */
+.project-card h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #b9c4d1;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Icon */
+.external-icon {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  font-size: 16px;
+  opacity: .5;
+}
+
+/* ✅ Responsive Breakpoints */
+
+@media (max-width: 1024px) {
+  .project-card {
+    width: calc(33.33% - 18px);
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+}

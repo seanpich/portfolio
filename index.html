@@ -6,8 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sean Pich | Cyper</title>
   <link rel="icon" type="image/png" href="Image/Cyper-Logo.png" />
+  
   <link rel="stylesheet" href="style.css" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 
 <body>
@@ -16,7 +18,7 @@
     <div class="container header-inner">
       <div class="logo">
         <img src="Image/Cyper-Logo.png" alt="logo" />
-        <a href="#" class="brand">CYPER</a>
+        <a href="#" class="brand">SEAN PICH</a>
       </div>
 
       <!-- desktop nav -->
@@ -28,7 +30,7 @@
                 <a href="#about" style="--i:2;">About</a>
             </li>
             <li>
-                <a href="#skill" style="--i:3;">Skill</a>
+                <a href="#services" style="--i:3;">Services</a>
             </li>
             <li>
                 <a href="#portfolio" style="--i:4;">Portfolio</a>
@@ -37,12 +39,6 @@
                 <a href="#contact" style="--i:5;">Contact</a>
             </li>
       </ul>
-
-      <!-- burger -->
-      <button class="menu-icon" aria-label="Open menu">
-        &#9776;
-      </button>
-    </div>
   </header>
 
   <!-- drawer -->
@@ -51,7 +47,7 @@
     <ul>
       <li><a href="#home" class="drawer-link">Home</a></li>
       <li><a href="#about" class="drawer-link">About</a></li>
-      <li><a href="#skill" class="drawer-link">Skill</a></li>
+      <li><a href="#services" class="drawer-link">Skill</a></li>
       <li><a href="#portfolio" class="drawer-link">Portfolio</a></li>
       <li><a href="#contact" class="drawer-link">Contact</a></li>
     </ul>
@@ -61,138 +57,193 @@
   <main>
 
     <!-- HOME -->
-    <section id="home" class="home section">
-      <div class="top">
-        <h1>SEAN PICH</h1>
-      </div>
 
       <div class="home-socials">
         <a href="https://www.facebook.com/Cyper.kh"><i class='bx bxl-facebook'></i></a>
         <a href="https://t.me/Cyper_v2"><i class='bx bxl-telegram'></i></a>
         <a href="https://www.instagram.com/cyper_v2"><i class='bx bxl-instagram'></i></a>
       </div>
+      
+      <!-- Home -->
+  <section id="hero" class="hero-section">
+    <div class="container">
 
-      <!-- ABOUT-ME HERO -->
-      <div class="about-me">
-        <div class="home-content">
-          <h3>Officaial for | Sean Pich</h3>
-          <p>
-            I am a problem solver related to technology, I have a bachelor's degree in information technology.
-            I work at Go Tech Solution Co., LTD with 4 years experience. I provide services such as full
-            software & hardware setup for all kinds of Windows and macOS devices.
-          </p>
-          <a href="page2.html" class="btn">Click Profile</a>
+      <!-- LEFT CONTENT -->
+      <div class="hero-text">
+        <span class="badge">4+ YEARS</span>
+
+        <h1>
+          Hi, I’m <span>PICH</span> — I am a<br>
+          problem solver related to technology, 
+        </h1>
+
+        <p>
+          I have a bachelor's degree in information technology. I work at Go Tech Solution Co., LTD with 4 years experience. I provide services such as full software & hardware setup for all kinds of Windows and macOS devices.
+        </p>
+
+        <div class="buttons">
+          <a href="Project/"><button class="btn primary" onclick="showApps()">Our Clients</button></a>
+          
+        </div>
+      </div>
+
+      <!-- RIGHT IMAGE -->
+      <div class="hero-image">
+        <img src="Image/4.jpg" alt="Developer">
+      </div>
+
+    </div>
+  </section>
+
+
+    <!-----ABOUT US------>
+<section id="about" class="about-section">
+    <div class="about-container">
+
+        <!-- LEFT -->
+        <div class="about-left">
+            <h1>About Us</h1>
+            <p>
+                We have been doing business nationwide since 2021. 
+                We combine creativity with the reliability of providing IT solutions that transform your digital landscape.
+            </p>
+
+            <ul class="about-features">
+                <li><i class="fas fa-check"></i> Innovation and reliability at our core</li>
+                <li><i class="fas fa-check"></i> Comprehensive IT solutions for all sizes</li>
+                <li><i class="fas fa-check"></i> Expert team committed to your success</li>
+            </ul>
         </div>
 
-        <div class="home-img">
-          <div class="glowing-circle">
-            <div class="image">
-              <img src="Image/Logo.png" alt="Sean Pich" />
+        <!-- RIGHT -->
+        <div class="about-right">
+            <h2>Why choose our solution?</h2>
+
+            <div class="why-item">
+                <div class="number">1</div>
+                <p>Experienced team of IT professionals</p>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="about-section section">
-      <h2 class="section-title">About Me</h2>
-
-      <div class="about-content">
-        <div class="about-text">
-          <h3>Is About Me</h3>
-          <p>
-            Hello! I'm Pich (CYPER), a local business providing Computer Solution services:
-            Computer & Server Maintenance, Network Solutions, and Camera & Security systems.
-          </p>
-          <p>
-            We also offer Domain Registration, E‑Mail & Web Hosting. We always serve our customers and clients.
-          </p>
-
-          <div class="about-highlights">
-            <div><span>➕</span> 4+ Years Experience</div>
-            <div><span>💼</span> 4+ IT Support</div>
-            <div><span>🎓</span> SETEC Institute</div>
-          </div>
-        </div>
-
-        <div class="about-image">
-          <div class="img-box">
-            <div class="img-item">
-              <img src="Image/test.png" alt="profile" />
+            <div class="why-item">
+                <div class="number">2</div>
+                <p>Proven track record of successful projects</p>
             </div>
-          </div>
+
+            <div class="why-item">
+                <div class="number">3</div>
+                <p>Commitment to client satisfaction</p>
+            </div>
+
+            <div class="why-item">
+                <div class="number">4</div>
+                <p>Competitive pricing</p>
+            </div>
+
+            <div class="why-item">
+                <div class="number">5</div>
+                <p>Continuous innovation and technology updates</p>
+            </div>
+
         </div>
+
+    </div>
+</section>
+<!--------SECTION SEVICES------------->
+<section id="services" class="services-section">
+  <h2>Our Services</h2>
+  <p>Comprehensive IT solutions tailored to your business needs</p>
+
+  <div class="services-grid">
+
+    <div class="service-card">
+      <div class="icon">📹</div>
+      <h3>CCTV Systems</h3>
+      <p>Professional surveillance solutions for security monitoring</p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">🖥️</div>
+      <h3>IT Consulting</h3>
+      <p>Expert guidance for your digital transformation</p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">🛡️</div>
+      <h3>Network Setup</h3>
+      <p>Secure and scalable network infrastructure</p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">☁️</div>
+      <h3>Cyber Security</h3>
+      <p>Protect your business from digital threats</p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">💻</div>
+      <h3>Web Development</h3>
+      <p>Modern, responsive web solutions</p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">📶</div>
+      <h3>Wifi Connections</h3>
+      <p>High-speed wireless network installation and management</p>
+    </div>
+
+  </div>
+</section>
+<section id="portfolio" class="portfolio-section">
+  <h2>Our Portfolio</h2>
+  <p>Showcasing our innovative IT solutions and successful projects delivered to clients across Cambodia</p>
+
+  <div class="portfolio-grid">
+
+    <div class="portfolio-card">
+      <img src="Image/SK7 Warehouse.jpg" alt="">
+      <div class="overlay">
+        <h3>CCTV Installation - Café North</h3>
       </div>
-    </section>
+    </div>
 
-    <!-- SKILLS -->
-    <section id="skill" class="skills-section section">
-      <h2 class="section-title">Skills</h2>
-
-      <div class="skills-container">
-        <div class="skill-card">
-          <div class="skill-icon">🖥</div>
-          <h3>Maintenance</h3>
-          <p>Computer/Server maintenance; pricing varies by device count and time.</p>
-          <div class="skill-tags"><span>Computer</span><span>Server</span><span>Network</span></div>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-icon">🎨</div>
-          <h3>Support Officer</h3>
-          <p>Remote & phone solutions during office hours.</p>
-          <div class="skill-tags"><span>Anydesk</span><span>Ultraviewer</span><span>Team Viewer</span></div>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-icon">⚙️</div>
-          <h3>Services</h3>
-          <p>. Setup Windows & macOS</p>
-          <p>. Install Software & Hardware</p>
-          <p>. Resolve Computer Issues</p>
-          <div class="skill-tags"><span>Desktop</span><span>Laptop</span></div>
-        </div>
+    <div class="portfolio-card">
+      <img src="https://images.unsplash.com/photo-1593642532400-2682810df593" alt="">
+      <div class="overlay">
+        <h3>Security Monitoring System</h3>
       </div>
-    </section>
+    </div>
 
-    <!-- PORTFOLIO -->
-    <section id="portfolio" class="portfolio-section section">
-      <h2 class="section-title">Portfolio</h2>
-
-      <div class="projects">
-        <div class="card">
-          <div class="card-header icon-bg1"><span class="icon">🖼</span></div>
-          <div class="card-body">
-            <h3>KTI Warehouse Camera Project</h3>
-            <p>Completed Setup Camera Project.</p>
-            <div class="tags"><span>Camera project</span></div>
-            <a href="#" class="view-link">View Project →</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header icon-bg2"><span class="icon">💻</span></div>
-          <div class="card-body">
-            <h3>MGB Clinic Camera Project/Network Project/Phone Project</h3>
-            <p>Completed Camera Project/Network/Phone.</p>
-            <div class="tags"><span>Camera Project</span><span>Network Project</span><span>Phone Project</span></div>
-            <a href="#" class="view-link">View Project →</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header icon-bg3"><span class="icon">⚡️</span></div>
-          <div class="card-body">
-            <h3>Graden Home-Prek Eng </h3>
-            <p>Completed Setup Camera Project.</p>
-            <div class="tags"><span>Camera Project</span></div>
-            <a href="#" class="view-link">View Project →</a>
-          </div>
-        </div>
+    <div class="portfolio-card">
+      <img src="Image/Parking CCTV Setup.jpg" alt="">
+      <div class="overlay">
+        <h3>Parking CCTV Setup</h3>
       </div>
-    </section>
+    </div>
 
+    <div class="portfolio-card">
+      <img src="Image/Systems Network Cyber Security.jpg" alt="">
+      <div class="overlay">
+        <h3>Server Rack & Network Cabling</h3>
+      </div>
+    </div>
+
+    <div class="portfolio-card">
+      <img src="Image/Office Security Upgrade.jpg" alt="">
+      <div class="overlay">
+        <h3>Office Security Upgrade</h3>
+      </div>
+    </div>
+
+    <div class="portfolio-card">
+      <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0" alt="">
+      <div class="overlay">
+        <h3>Camera Installation Project</h3>
+      </div>
+    </div>
+
+  </div>
+</section>
+    
     <!-- CONTACT -->
     <section id="contact" class="contact-section section">
       <h2 class="section-title">Get in Touch</h2>
@@ -204,7 +255,7 @@
           <div class="info-item">
             <div class="icon-box"><i class='bx bx-envelope'></i></div>
             <div><strong>Email</strong>
-              <p>pich.cambodiadev@gmail.com</p>
+              <p>seanpich.official@gmail.com</p>
             </div>
           </div>
           <div class="info-item">
@@ -226,6 +277,8 @@
             <a href="https://t.me/Cyper_v2"><i class='bx bxl-telegram'></i></a>
             <a href="https://www.youtube.com/@Cyper_v2"><i class='bx bxl-youtube'></i></a>
             <a href="https://www.instagram.com/cyper_v2"><i class='bx bxl-instagram'></i></a>
+             <a href="https://www.linkedin.com/in/sean-pich007"><i class='bx bxl-linkedin'></i></a>
+             <a href="https://github.com/seanpich"><i class='bx bxl-github' ></i></a>
           </div>
         </div>
 
@@ -251,6 +304,9 @@
           <a href="https://www.facebook.com/Cyper.kh"><i class="bx bxl-facebook"></i></a>
           <a href="https://t.me/Cyper_v2"><i class="bx bxl-telegram"></i></a>
           <a href="https://www.instagram.com/cyper_v2"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/sean-pich007"><i class='bx bxl-linkedin'></i></a>
+          <a href="https://github.com/seanpich"><i class='bx bxl-github' ></i></a>
+          <a href="https://www.youtube.com/@Cyper_v2"><i class='bx bxl-youtube'></i></a>
         </div>
       </div>
 
@@ -266,18 +322,47 @@
 
       <div class="footer-section">
         <h3>Contact</h3>
-        <p><i class='bx bx-envelope'></i> pich.cambodiadev@gmail.com</p>
+        <p><i class='bx bx-envelope'></i>seanpich.official@gmail.com</p>
         <p><i class='bx bxs-phone'></i> +855 15-296-851</p>
         <p><i class='bx bxs-city'></i> Phnom Penh City</p>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <p>© 2025 | Developed By | SEAN PICH</p>
+      <p>© 2026 PICH | All Rights Reserved.</p>
     </div>
   </footer>
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    const menuBtn = document.getElementById("menuToggle");
+    const navMenu = document.getElementById("navMenu");
+    const darkBtn = document.getElementById("darkToggle");
+    const body = document.body;
 
-  <script src="script.js"></script>
+    // Menu Toggle
+    menuBtn.onclick = () => {
+      navMenu.classList.toggle("active");
+    };
+
+    // Dark Mode Toggle
+    darkBtn.onclick = () => {
+      body.classList.toggle("dark");
+
+      if (body.classList.contains("dark")) {
+        darkBtn.textContent = "☀️";
+        localStorage.setItem("theme", "dark");
+      } else {
+        darkBtn.textContent = "🌙";
+        localStorage.setItem("theme", "light");
+      }
+    };
+
+    // Load theme
+    if (localStorage.getItem("theme") === "dark") {
+      body.classList.add("dark");
+      darkBtn.textContent = "☀️";
+    }
+  </script>
+
 </body>
-
 </html>

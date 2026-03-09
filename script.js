@@ -53,3 +53,17 @@ document.addEventListener('click', (e) => {
 drawerMenu.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', closeDrawer);
 });
+
+// Simple scroll animation trigger (optional)
+const cards = document.querySelectorAll('.portfolio-card');
+
+window.addEventListener('scroll', () => {
+  cards.forEach(card => {
+    const rect = card.getBoundingClientRect().top;
+    if (rect < window.innerHeight - 100) {
+      card.style.opacity = "1";
+      card.style.transform = "scale(1)";
+    }
+  });
+});
+
