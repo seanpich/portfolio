@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ========================= -->
+<!-- PRODUCTS SECTION -->
+<!-- ADD THIS BELOW BLOG SECTION -->
+<!-- ========================= -->
+
+<section id="products">
+
+  <h2 class="title">Our Products</h2>
+
+  <div class="blog-container">
+
+    <!-- PRODUCT 1 -->
+    <div class="blog-card">
+      <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=1200&auto=format&fit=crop">
+
+      <div class="blog-content">
+        <h3>Gaming Mouse</h3>
+        <p>High quality RGB gaming mouse for fast performance.</p>
+
+        <h4>$25</h4><br>
+
+        <button class="btn"
+          onclick="addToCart('Gaming Mouse',25)">
+          Add To Cart
+        </button>
+      </div>
+    </div>
+
+    <!-- PRODUCT 2 -->
+    <div class="blog-card">
+      <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?q=80&w=1200&auto=format&fit=crop">
+
+      <div class="blog-content">
+        <h3>SSD Storage</h3>
+        <p>Fast SSD storage for desktop and laptop computers.</p>
+
+        <h4>$80</h4><br>
+
+        <button class="btn"
+          onclick="addToCart('SSD Storage',80)">
+          Add To Cart
+        </button>
+      </div>
+    </div>
+
+    <!-- PRODUCT 3 -->
+    <div class="blog-card">
+      <img src="https://images.unsplash.com/photo-1517336714739-489689fd1ca8?q=80&w=1200&auto=format&fit=crop">
+
+      <div class="blog-content">
+        <h3>Desktop RAM</h3>
+        <p>DDR4 high-speed memory for gaming and office work.</p>
+
+        <h4>$55</h4><br>
+
+        <button class="btn"
+          onclick="addToCart('Desktop RAM',55)">
+          Add To Cart
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- CART SECTION -->
+<!-- ADD THIS ABOVE FOOTER -->
+<!-- ========================= -->
+
+<section id="cart">
+
+  <h2 class="title">Shopping Cart</h2>
+
+  <div class="cart-box">
+
+    <ul id="cartItems"></ul>
+
+    <h3>Total: $<span id="total">0</span></h3>
+
+    <button class="btn" onclick="checkout()">
+      Pay Now
+    </button>
+
+  </div>
+
+</section>
+</body>
+</html>

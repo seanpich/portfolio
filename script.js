@@ -67,3 +67,22 @@ window.addEventListener('scroll', () => {
   });
 });
 
+<script>
+const counters = document.querySelectorAll('.stat-card h2');
+
+counters.forEach(counter => {
+    const updateCounter = () => {
+        const target = parseInt(counter.innerText);
+        const count = +counter.getAttribute('data-count') || 0;
+
+        if (count < target) {
+            counter.setAttribute('data-count', count + 1);
+            counter.innerText = count + 1 + '+';
+            setTimeout(updateCounter, 20);
+        } else {
+            counter.innerText = target + '+';
+        }
+    };
+    updateCounter();
+});
+</script>
