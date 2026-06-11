@@ -1,88 +1,28 @@
+const menuBtn = document.querySelector(".menu-btn");
+const navLinks = document.querySelector(".nav-links");
 
-// ---------------------
-// ScrollReveal animations
-// ---------------------
-ScrollReveal({
-  reset: true,
-  distance: "50px",
-  duration: 1000,
-  delay: 200
+menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
 });
 
-ScrollReveal().reveal('.header', { origin: 'top' });
-ScrollReveal().reveal('.home .top', { origin: 'left' });
-ScrollReveal().reveal('.home .bottom', { origin: 'right' });
-ScrollReveal().reveal('.about-section .about-text', { origin: 'left' });
-ScrollReveal().reveal('.about-section .about-image', { origin: 'right' });
-ScrollReveal().reveal('.skill-card', { interval: 200, origin: 'bottom' });
-ScrollReveal().reveal('.portfolio-section .card', { interval: 200, origin: 'bottom' });
-ScrollReveal().reveal('.contact-section .contact-info', { origin: 'left' });
-ScrollReveal().reveal('.contact-section .contact-form', { origin: 'right' });
-ScrollReveal().reveal('.site-footer', { origin: 'bottom' });
+const themeBtn = document.getElementById("theme-btn");
 
-// ---------------------
-// Drawer menu toggle
-// ---------------------
-const menuIcon = document.querySelector('.menu-icon');
-const drawer = document.querySelector('#drawer');
-const closeIcon = document.querySelector('.close-icon');
-const drawerMenu = document.querySelector('.drawer-menu');
-const mainMenu = document.querySelector('.menu');
-
-// Copy main menu items into drawer
-drawerMenu.innerHTML = mainMenu.innerHTML;
-
-const openDrawer = () => drawer.classList.add('open');
-const closeDrawer = () => drawer.classList.remove('open');
-
-menuIcon.addEventListener('click', (e) => {
-  e.stopPropagation();
-  drawer.classList.toggle('open');
+themeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
 });
 
-closeIcon.addEventListener('click', closeDrawer);
+let count = 0;
 
-// Close when clicking outside
-document.addEventListener('click', (e) => {
-  if (!drawer.contains(e.target) && !menuIcon.contains(e.target)) {
-    closeDrawer();
-  }
+document.querySelectorAll(".add-cart").forEach(btn => {
+    btn.addEventListener("click", () => {
+        count++;
+        document.getElementById("cart-count").innerText = count;
+    });
 });
 
-// Close when clicking inside drawer menu links
-drawerMenu.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', closeDrawer);
+const menuBtn = document.querySelector(".menu-btn");
+const navLinks = document.querySelector(".nav-links");
+
+menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
 });
-
-// Simple scroll animation trigger (optional)
-const cards = document.querySelectorAll('.portfolio-card');
-
-window.addEventListener('scroll', () => {
-  cards.forEach(card => {
-    const rect = card.getBoundingClientRect().top;
-    if (rect < window.innerHeight - 100) {
-      card.style.opacity = "1";
-      card.style.transform = "scale(1)";
-    }
-  });
-});
-
-<script>
-const counters = document.querySelectorAll('.stat-card h2');
-
-counters.forEach(counter => {
-    const updateCounter = () => {
-        const target = parseInt(counter.innerText);
-        const count = +counter.getAttribute('data-count') || 0;
-
-        if (count < target) {
-            counter.setAttribute('data-count', count + 1);
-            counter.innerText = count + 1 + '+';
-            setTimeout(updateCounter, 20);
-        } else {
-            counter.innerText = target + '+';
-        }
-    };
-    updateCounter();
-});
-</script>
